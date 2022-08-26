@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.biometric_security_app">
 
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BiometricSecurity_App"
         tools:targetApi="31">
+        <activity
+            android:name=".Home_activity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
